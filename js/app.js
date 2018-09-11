@@ -3,13 +3,19 @@ alert('welcome to the control flow lab, lets go to the shops');
 var item = prompt('what would you like to buy?(fruit/veg/cereal)');
 
 if (item === 'fruit') {
-  var fruit = prompt('we have a variety of fruit,which fruit would you like? (apples/oranges/grapes)');
+  var fruit = prompt("we have a variety of fruit,which fruit would you like? (apples/oranges/grapes--or a combination such as 'applesandoranges')");
   if (fruit==='apples')
-  alert('apples are £2');
+  alert('apples are £2')
   if (fruit ==='oranges')
-  alert('oranges are £3');
+  alert('oranges are £3')
   if (fruit ==='grapes')
-  alert('grapes are £1');
+  alert('grapes are £1')
+  if (fruit==='applesandoranges')
+  alert('apples and oranges are £5')
+  if (fruit==='applesandgrapes')
+  alert('apples and grapes are £4')
+  // this is an inefficient way of listing all combinations but it works...
+
 }
 
 
