@@ -4,16 +4,22 @@ var item = prompt('what would you like to buy?(fruit/veg/cereal)');
 
 if (item === 'fruit') {
   var fruit = prompt("we have a variety of fruit,which fruit would you like? (apples/oranges/grapes--or a combination such as 'applesandoranges')");
-  if (fruit==='apples')
-  alert('apples are £2')
-  if (fruit ==='oranges')
-  alert('oranges are £3')
-  if (fruit ==='grapes')
-  alert('grapes are £1')
-  if (fruit==='applesandoranges')
-  alert('apples and oranges are £5')
-  if (fruit==='applesandgrapes')
-  alert('apples and grapes are £4')
+  if (fruit==='apples'){
+    alert('apples are £2')
+  }
+  else if (fruit ==='oranges'){
+    alert('oranges are £3')}
+  else if (fruit ==='grapes'){
+    alert('grapes are £1')}
+  else if (fruit==='applesandoranges'){
+    alert('apples and oranges are £5')}
+
+  else if (fruit==='applesandgrapes'){
+    alert('apples and grapes are £4')
+  }
+  else{
+    alert('out of stock')
+  }
   // this is an inefficient way of listing all combinations but it works...
 
 }
@@ -22,23 +28,25 @@ if (item === 'fruit') {
 
 else if (item === 'veg'){
   var veg =prompt('we have a variety of veg, which veg would you like? (carrots/peas/broccoli)');
-  if (veg ==='carrots')
-  alert('carrots are £2');
-  if (veg ==='peas')
-  alert('peas are £3');
-  if (veg ==='broccoli')
-  alert('broccoli is £1');
+  if (veg ==='carrots') {
+  alert('carrots are £2') }
+  else if (veg ==='peas') {
+  alert('peas are £3') }
+  else if (veg ==='broccoli') {
+  alert('broccoli is £1')}
+  else {alert('out of stock')}
 
 }
 
 else if (item === 'cereal') {
   var cereal = prompt('we have a variety of cereal, which cereal would you like (kellogs/cocopops/goldennuggets)')
-  if (cereal==='kellogs')
-  alert('kellogs is £2');
-  if (cereal ==='cocopops')
-  alert('cocopops are £3');
-  if (cereal==='goldennuggets')
-  alert('goldennuggets is £1');
+  if (cereal==='kellogs'){
+  alert('kellogs is £2')}
+  else if (cereal ==='cocopops'){
+  alert('cocopops are £3')}
+  else if (cereal==='goldennuggets'){
+  alert('goldennuggets is £1')}
+  else {alert('out of stock')}
 }
 
 else {
